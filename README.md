@@ -1,1 +1,4 @@
-# shawn_data606
+# UMBC Data Science Capstone Project
+
+Author: Shawn Oppermann
+Term: Summer 2023
