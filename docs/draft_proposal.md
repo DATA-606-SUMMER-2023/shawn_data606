@@ -9,7 +9,7 @@ Virtual Reality (VR) gaming is rising in popularity as a pastime, but not withou
 
 Popular VR games such as VRChat have a standard rig that includes joints for the hands, feet, elbows, knees, hips, chest, neck, shoulders, and head. Most users only have three trackers for the hands and head, meaning the rest of the joint positions are inferred. While inverse kinematics (IK) can make a fast, reasonable inference for individual limbs, the error between the true and inferred joint positions across the entire rig can often be quite large.
 
-VR software supports additional trackers to reduce inference, but this approach can become cumbersome and unaffordable. To the end of avoiding additional hardware, this document proposes a project that explores the applications of deep learning regression models for pose estimation, comparing the speed and accuracy of different approaches.
+VR software supports additional trackers to reduce inference, but this approach can become cumbersome and unaffordable. To the end of avoiding additional hardware, the proposed project aims to explore the applications of various regression models (most likely with an emphasis on deep learning) for pose estimation, comparing the speed and accuracy of different approaches. In other words, the project should answer the question of whether it is feasible to predict the pose of an entire human body using only the location and orientation of a few joints.
 
 ## Dataset
 
