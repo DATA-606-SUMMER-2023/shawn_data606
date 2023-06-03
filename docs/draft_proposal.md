@@ -9,11 +9,47 @@ Virtual Reality (VR) gaming is rising in popularity as a pastime, but not withou
 
 Popular VR games such as VRChat have a standard rig that includes joints for the hands, feet, elbows, knees, hips, chest, neck, shoulders, and head. Most users only have three trackers for the hands and head, meaning the rest of the joint positions are inferred. While inverse kinematics (IK) can make a fast, reasonable inference for individual limbs, the error between the true and inferred joint positions across the entire rig can often be quite large.
 
-VR software supports additional trackers to reduce inference, but this approach can become cumbersome and unaffordable. To the end of avoiding additional hardware, the proposed project aims to explore the applications of various regression models (most likely with an emphasis on deep learning) for pose estimation, comparing the speed and accuracy of different approaches. In other words, the project should answer the question of whether it is feasible to predict the pose of an entire human body using only the location and orientation of a few joints.
+VR software supports additional trackers to reduce inference, but this approach can become cumbersome and unaffordable. To the end of avoiding additional hardware, the proposed project aims to explore the applications of various regression models (most likely with an emphasis on deep learning) for pose estimation, comparing the speed and accuracy of different approaches. In other words, the project should answer the question of whether it is feasible to predict the pose of an entire human body using only the location and orientation of a few joints, initially just the head and hands.
 
 ## Dataset
 
-Carnegie Mellon University researchers have courteously provided an open source motion capture database. The data consists of the joint positions for various motion-captured actions. For example, there are entries for men and women running, playing sports, sitting, etc. for 30 or more frames. The joints for a standard VR rig are a subset of the joints used in the dataset
+Carnegie Mellon University researchers have courteously provided an open source motion capture database. The data consists of the joint positions and orientations for various motion-captured actions. For example, there are entries for men and women running, playing sports, sitting, etc. for 30 or more frames. 
+
+The joints for a standard VR rig are a subset of the joints used in the dataset.
+
+```
+└── root
+    ├── lhipjoint
+    │   └── lfemur
+    │       └── ltibia
+    │           └── lfoot
+    │               └── ltoes
+    ├── rhipjoint
+    │   └── rfemur
+    │       └── rtibia
+    │           └── rfoot
+    │               └── rtoes
+    └── lowerback
+        └── upperback
+            └── thorax
+                ├── lowerneck
+                │   └── upperneck
+                │       └── head
+                ├── lclavicle
+                │   └── lhumerus
+                │       └── lradius
+                │           └── lwrist
+                │               ├── lthumb
+                │               └── lhand
+                │                   └── lfingers
+                └── rclavicle
+                    └── rhumerus
+                        └── rradius
+                            └── rwrist
+                                ├── rthumb
+                                └── rhand
+                                    └── rfingers
+```
 
 ## Process
 
