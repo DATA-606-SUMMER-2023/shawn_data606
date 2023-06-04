@@ -1,3 +1,7 @@
+# Dataset
+data/subjects/**/*.asf
+data/subjects/**/*.amc
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
