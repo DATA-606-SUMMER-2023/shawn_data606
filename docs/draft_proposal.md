@@ -135,3 +135,7 @@ As an example for the upper body:
 ## Deployment
 
 Deep Learning models in particular are easy to export into the .onnx format. This allows the model to be used in the game engine Unity via their extension Barracuda. From there live testing can be performed by using a VR headset and controllers by creating a small VR testing application. Alternatively, a Stremlit app can be created that uses plotly to demonstrate how closely the pose prediction matches a test set.
+
+## References
+
+**Dataset:** “Carnegie Mellon University - CMU Graphics Lab - Motion Capture Library.” CMU Graphics Lab Motion Capture Database, Carnegie Mellon University, http://mocap.cs.cmu.edu/. 
