@@ -106,8 +106,8 @@ is shown below. This is subject 1 in the dataset.
 
 Below is the distribution of arm span and height (in meters) for subjects. The variance is very low, and suggests that most subjects have a reasonable rest pose. There are two high outliers in height, and it may be worth checking those subjects to see if their pose is different or if the subjects are just tall.
 
-![Arm Span](armspan.png)
-![Height](height.png)
+![Arm Span](images/armspan.png)
+![Height](images/height.png)
 
 ### Animation Length
 
@@ -115,8 +115,8 @@ It was found that motions can range from being ~2 seconds long to ~3 minutes lon
 
 Below is the distributions of frame counts, grouped by subject. Another table with the axis converted to seconds has also been added.
 
-![Frame Count](frame_count.png)
-![Motion Time](motion_time.png)
+![Frame Count](images/frame_count.png)
+![Motion Time](images/motion_time.png)
 
 ## Process
 
