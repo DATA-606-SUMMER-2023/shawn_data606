@@ -15,7 +15,7 @@ VR software supports additional body trackers to reduce inference, but this appr
 
 Carnegie Mellon University researchers have courteously provided an open source motion capture database. The data consists of the joint positions and orientations for various motion-captured actions. For example, there are entries for men and women running, playing sports, sitting, etc. for 30 or more frames. 
 
-Information regarding the subjects, types of motion, and the dataset itself can be found at http://mocap.cs.cmu.edu/info.php. A reson I enjoy this dataset is because of its wide range of motion, ranging from just walking to full-blown acrobatics. The diversity is important for training a general model for pose estiation.
+Information regarding the subjects, types of motion, and the dataset itself can be found at http://mocap.cs.cmu.edu/info.php. A reason I enjoy this dataset is because of its wide range of motion, ranging from just walking to full-blown acrobatics. The diversity is important for training a general model for pose estimation.
 
 Each motion capture animation consists of the position and orientation of 31 different joints. The joints used for a standard VR rig are a subset of the joints used in the dataset. The position and bone length is in a custom scale, but can be converted to meters. The orientation is a rotation 3x3 matrix, with each of the elements ranging from 0 to 1.
 
@@ -84,7 +84,7 @@ And here is the subset of that joint tree relevant to VR full-body tracking:
 ```
 The joints with asterisks are the joints that would need to be tracked to determine the body's entire pose assuming all bone lengths are known.
 
-To ensure that the positions and bonel lengths are in meters, CMU provides meter conversion scale of (1.0/0.45)*2.54/100.0
+To ensure that the positions and bone lengths are in meters, CMU provides meter conversion scale of (1.0/0.45)*2.54/100.0
 
 ## Preliminary EDA
 
@@ -134,7 +134,7 @@ As an example for the upper body:
 
 ## Deployment
 
-Deep Learning models in particular are easy to export into the .onnx format. This allows the model to be used in the game engine Unity via their extension Barracuda. From there live testing can be performed by using a VR headset and controllers by creating a small VR testing application. Alternatively, a Stremlit app can be created that uses plotly to demonstrate how closely the pose prediction matches a test set.
+Deep Learning models in particular are easy to export into the .onnx format. This allows the model to be used in the game engine Unity via their extension Barracuda. From there live testing can be performed by using a VR headset and controllers by creating a small VR testing application. Alternatively, a Streamlit app can be created that uses plotly to demonstrate how closely the pose prediction matches a test set.
 
 ## References
 
