@@ -2,7 +2,6 @@
 data/subjects/**/*.asf
 data/subjects/**/*.amc
 data/subjects/**/*.pkl
-data/subjects_small/**/*.pkl
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
