@@ -28,8 +28,8 @@ def get_diff(animation_df):
         j_df = animation_df.loc[(slice(None), j), :]
         new_df = pd.DataFrame(index = j_df.index)
         new_df['velocity'] = j_df['position'].diff() * 120.0
-        new_df['acceleration'] = new_df['velocity'].diff() * 120.0
-        new_df['jerk'] = new_df['acceleration'].diff() * 120.0
+        new_df['acceleration'] = new_df['velocity'].diff()
+        new_df['jerk'] = new_df['acceleration'].diff()
 
         final_df = pd.concat([final_df, new_df])
 
