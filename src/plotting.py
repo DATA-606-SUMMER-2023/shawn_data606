@@ -12,7 +12,7 @@ import plotly
 import plotly.express as px
 import plotly.graph_objects as go
 
-def get_pose_frame(pose_df, lines=True, tracker_size=20, prediction_size=10, joint_size=1):
+def get_pose_frame(pose_df, lines=True, tracker_size=20, prediction_size=10, joint_size=1, joint_color=None):
     '''
     Provides a frame to use in a plotly figure based on the provided pose_df.
 
@@ -39,7 +39,7 @@ def get_pose_frame(pose_df, lines=True, tracker_size=20, prediction_size=10, joi
         mode='markers',
         marker={
             'size': [tracker_size if j else prediction_size if i else joint_size for i, j in zip(is_tracker, is_pred)],
-            'color': ['green' if j else 'blue' if i else 'black' for i, j in zip(is_tracker, is_pred)]
+            'color': joint_color if joint_color is not None else ['green' if j else 'blue' if i else 'black' for i, j in zip(is_tracker, is_pred)]
         },
         hoverinfo='skip',
         hovertemplate='%{text}',

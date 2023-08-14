@@ -13,6 +13,9 @@ import parsing
 import posing
 import plotting
 
+def get_animation_length(animation_df):
+    return len(animation_df.index.get_level_values('frame').unique())
+
 def get_torso_verticality(animation_df):
     torso_vert = animation_df.loc[:, 'lowerneck', :]['position'] - animation_df.loc[:, 'lowerback', :]['position']
     torso_vert /= torso_vert.apply(np.linalg.norm)
@@ -54,10 +57,12 @@ def energy(animation_df, joints=['root']):
 
 def extract_features(animation_df):
     return pd.DataFrame({
+        'Animation Length': [get_animation_length(animation_df)],
         'Torso Verticality Mean': [get_torso_verticality(animation_df).mean()],
         'Torso Verticality Std.': [get_torso_verticality(animation_df).std()],
         'Instability': [root_instability(animation_df).mean()],
+        'Root Energy': [energy(animation_df, joints=['lwrist', 'rwrist']).mean()],
         'Hand Energy': [energy(animation_df, joints=['lwrist', 'rwrist']).mean()],
         'Foot Energy': [energy(animation_df, joints=['lfoot', 'rfoot']).mean()],
-        'Head Energy': [energy(animation_df, joints=['head']).mean()]
+        'Head Energy': [energy(animation_df, joints=['head']).mean()],
     })

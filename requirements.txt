@@ -9,3 +9,5 @@ nbformat
 tabulate
 matplotlib
 streamlit
+streamlit_tree_select
+scikit-learn
