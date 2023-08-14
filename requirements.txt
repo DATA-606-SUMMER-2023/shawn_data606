@@ -8,3 +8,4 @@ tqdm
 nbformat
 tabulate
 matplotlib
+streamlit
