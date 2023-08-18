@@ -7,9 +7,9 @@ __Regression Modeling Upper Body Pose Estimation for Virtual Reality HMD and Con
 
 ## Presentation File
 
-[pptx]https://github.com/soppermann/shawn_data606/tree/main/docs/presentation.pptx
+pptx: https://github.com/soppermann/shawn_data606/tree/main/docs/presentation.pptx
 
-[marp/md]https://github.com/soppermann/shawn_data606/tree/main/docs/presentation.md
+marp/markdown: https://github.com/soppermann/shawn_data606/tree/main/docs/presentation.md
 
 ## Original Dataset Link
 
