@@ -4,6 +4,20 @@ _DATA606 Shawn Oppermann_
 
 _UMBC Summer 2023_
 
+## Presentation File
+
+pptx: https://github.com/soppermann/shawn_data606/tree/main/docs/presentation.pptx
+
+marp/markdown: https://github.com/soppermann/shawn_data606/tree/main/docs/presentation.md
+
+## Original Dataset Link
+
+http://mocap.cs.cmu.edu/
+
+## Video Presentation
+
+https://youtu.be/P3u8BLoyBP4
+
 ## Abstract
 
 Virtual Reality (VR) gaming is rising in popularity as a pastime, but not without issue. The standard VR setup consists of a head-mounted display (HMD) and two controllers. This alone may be hard to afford, but adding full-body tracking can be prohibitively expensive, as each tracked joint requires a separate tracker. To the end of avoiding additional hardware, this paper proposes an application of regression models for pose estimation. This paper compares various basic regression modeling approaches with a particular focus on ways motion capture data can be prepared for training and post processed for inference.
