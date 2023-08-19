@@ -5,6 +5,10 @@ __Regression Modeling Upper Body Pose Estimation for Virtual Reality HMD and Con
 - **Author:** Shawn Oppermann
 - **Term:** Summer 2023
 
+## Report
+
+https://github.com/soppermann/shawn_data606/tree/main/docs/report.md
+
 ## Presentation File
 
 pptx: https://github.com/soppermann/shawn_data606/tree/main/docs/presentation.pptx
